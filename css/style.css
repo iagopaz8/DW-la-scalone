@@ -1080,7 +1080,7 @@ footer section{
     "remeras" ;
 
     grid-template-columns: 90%;
-    grid-template-rows: 60px repeat(3, 440px) ;
+    grid-template-rows: 60px repeat(3, 450px) ;
     justify-content: center;
     text-align: center;
  }
