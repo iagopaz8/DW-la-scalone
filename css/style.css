@@ -592,6 +592,8 @@ footer section{
     grid-area: mapa;
     align-items: center;
     justify-content: center;
+    height: 100%;
+    width: 100%;
 }
 .info1{
     grid-area: info;
