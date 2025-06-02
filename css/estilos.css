@@ -757,7 +757,7 @@ form {
     display: grid;
     grid-template-areas: "titulo" "mapa" "info" "info2" "info3" "info4" "info5" "info6" "info7" "info8" "info9" "info10" "titulo2" "nombre" "nombre2" "mail" "mail2" "duda" "duda2" "enviar" "invitacion" "gracias";
     grid-template-columns: 90%;
-    grid-template-rows: 60px 250px repeat(5, 40px 50px) 260px repeat(2, 30px 40px) 80px 80px 60px 100px 80px;
+    grid-template-rows: 60px 250px repeat(5, 40px 40px) 240px repeat(2, 30px 40px) 80px 80px 60px 100px 80px;
     justify-content: center;
   }
   .contanto-1 {
