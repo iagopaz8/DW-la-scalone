@@ -1,0 +1,41 @@
+/*main de tienda*/
+.tienda {
+    display: flex;
+}
+
+.titulo-tienda {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+.card-group-2{
+    display: flex;
+}
+
+
+/*diseño tienda*/
+.merchandising-1 {
+    grid-area: titulo;
+    text-align: center;
+}
+.tienda {
+    display: grid;
+    grid-template-areas:
+        "titulo"
+        
+    ;
+
+
+    grid-template-columns: 90%;
+    grid-template-rows: 60px ;
+    justify-content: center;
+    text-align: center;
+}
+
+.titulo-tienda {
+    grid-area: titulo;
+    text-align: center;
+}
+
+

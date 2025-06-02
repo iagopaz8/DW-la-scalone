@@ -1,0 +1,861 @@
+@charset "UTF-8";
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/*font-family:"Poppins", sans-serif*/
+body {
+  font-family: "Poppins", sans-serifS;
+}
+
+/*header y footer*/
+.navegador {
+  background-color: #254D70;
+  border-radius: 0 0 0 0.75rem 0.75rem;
+  padding: 1rem;
+}
+.navegador a {
+  color: #000000;
+  text-decoration: none;
+  font-size: 1.5rem;
+}
+
+/*footer*/
+footer {
+  background-color: #254D70;
+}
+footer h2 {
+  color: #000000;
+  text-align: center;
+}
+footer .iconos-redes {
+  text-align: center;
+  display: flex;
+  justify-content: space-around;
+  height: 100%;
+  align-items: center;
+  height: 10px;
+  margin: 15px;
+}
+footer section {
+  text-align: center;
+  border: 5px;
+  padding: 10px;
+}
+footer h6 {
+  font-size: 0.7rem;
+  margin: 12px;
+  color: #000000;
+}
+
+/*todo dentro de main de index*/
+.indexdiseño img {
+  width: 100%;
+  width: 100%;
+}
+
+main {
+  margin-block-start: 6rem;
+  background-color: #F1EFEC;
+}
+main .tituloprincipal {
+  text-align: center;
+  font-family: initial;
+}
+main .carrusel {
+  margin: auto;
+}
+main .la-escaloneta {
+  text-align: center;
+  margin: 20px;
+}
+
+/*diseño index*/
+.index img {
+  width: 100%;
+  height: 100%;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.5);
+}
+
+.indexdiseño {
+  display: grid;
+  grid-template-areas: "titulo titulo titulo" "carrusel carrusel carrusel" "texto1 texto1 texto1" "img1 img2 img3";
+  grid-template-columns: 30% 30% 30%;
+  grid-template-rows: 60px 1fr 120px 350px;
+  justify-content: center;
+  align-items: center;
+  gap: 4px;
+  border-radius: 3%;
+}
+
+.tituloprincipal {
+  grid-area: titulo;
+  text-align: center;
+}
+
+.carrusel {
+  grid-area: carrusel;
+}
+
+.la-escaloneta {
+  grid-area: texto1;
+  text-align: center;
+}
+
+.entrada, .di-maria-finalissima, .messi2copaamericas {
+  grid-area: img2;
+  text-align: center;
+  width: 100%;
+  height: 100%;
+  border-radius: 3%;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.5);
+}
+
+.entrada:hover, .di-maria-finalissima:hover, .messi2copaamericas:hover {
+  transform: scale(1.2);
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.messi2copaamericas {
+  grid-area: img3;
+}
+
+.messi2copaamericas:hover {
+  transform: scale(1.2);
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.di-maria-finalissima {
+  grid-area: img1;
+}
+
+.di-maria-finalissima:hover {
+  transform: scale(1.2);
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+/*main de estadisticas*/
+.contenedor-grid .estadisticas {
+  text-align: center;
+  text-decoration: underline;
+}
+.contenedor-grid .resumen {
+  text-align: center;
+}
+.contenedor-grid .titulos {
+  text-align: center;
+  list-style: none;
+}
+.contenedor-grid .estadisticasIndividuales {
+  border-width: 100%;
+}
+.contenedor-grid .estadisticasIndividuales img {
+  width: 100%;
+}
+
+.entrenadores:hover {
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+}
+
+.tabla:hover {
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+}
+
+/*diseño estadisticas */
+.contenedor-grid img {
+  height: 100%;
+  width: 100%;
+}
+
+.contenedor-grid {
+  display: grid;
+  grid-template-areas: "titulo titulo" "resumen resumen" "estadisticas2 estadisticas2";
+  grid-template-columns: 45% 45%;
+  grid-template-rows: 80px 100px 60px;
+  column-gap: 50px;
+  justify-content: center;
+  align-items: center;
+}
+
+.grid-titulo-1 {
+  display: grid;
+  text-align: center;
+  padding: 10px;
+  align-items: center;
+}
+
+.grid-resumen-1 {
+  display: grid;
+  padding: 15px;
+  text-align: center;
+}
+
+.grid-estadisticas-1 {
+  grid-area: titulo;
+  text-align: center;
+  margin: 15px;
+}
+
+.grid-resumen-2 {
+  grid-area: resumen;
+  text-align: center;
+}
+
+.grid-partidos-1 {
+  grid-area: partidos1;
+  text-align: center;
+  list-style: none;
+}
+
+.grid-estadisticas-2 {
+  grid-area: estadisticas2;
+  text-align: center;
+}
+
+.tabla {
+  text-align: center;
+}
+
+/*main de galeria*/
+.galeria-grid .imagenes {
+  width: 100%;
+  height: 100%;
+  text-align: center;
+}
+.galeria-grid .galeria {
+  text-decoration: underline;
+  text-align: center;
+}
+.galeria-grid .videos {
+  text-align: center;
+}
+.galeria-grid .grid-mejoresmomentos {
+  display: grid;
+  align-items: center;
+}
+
+/* diseño galeria*/
+.galeria-grid img {
+  height: 100%;
+  width: 100%;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.5);
+}
+
+.galeria-grid img:hover {
+  transform: scale(1.2);
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.galeria-grid video {
+  height: 100%;
+  width: 100%;
+}
+
+.galeria-grid {
+  display: grid;
+  grid-template-areas: "titulo titulo titulo" "img1 img2 img3" "img4 img5 img3" "img4 img6 img7" "img8 img9 img10" "img11 img12 img10" "titulo2 titulo2 titulo2" "video1 texto1 video2 " "video3 texto1 video4 ";
+  grid-template-columns: 30% 30% 30%;
+  grid-template-rows: 60px 300px 300px 300px 300px 300px 40px 300px 300px;
+  gap: 7px;
+  justify-content: center;
+  align-items: stretch;
+  justify-items: stretch;
+}
+
+.grid-fotos {
+  grid-area: titulo;
+  text-align: center;
+}
+
+.grid-galeriaseleccion-1 {
+  grid-area: img1;
+  border: cap;
+  border-radius: 3%;
+}
+
+.grid-galeriaseleccion-2 {
+  grid-area: img2;
+  border: 0;
+  border-radius: 3%;
+}
+
+.grid-galeriaseleccion-3 {
+  grid-area: img3;
+  border: 0;
+  border-radius: 3%;
+}
+
+.grid-galeriaseleccion-4 {
+  grid-area: img5;
+  border: 0;
+  border-radius: 3%;
+}
+
+.grid-galeriaseleccion-5 {
+  grid-area: img4;
+  border: 0cap;
+  border-radius: 3%;
+}
+
+.grid-galeriaseleccion-6 {
+  grid-area: img6;
+  border: 0;
+  border-radius: 3%;
+}
+
+.grid-galeriaseleccion-7 {
+  grid-area: img7;
+  border: 0;
+  border-radius: 3%;
+}
+
+.grid-galeriaseleccion-8 {
+  grid-area: img8;
+  border: 0;
+  border-radius: 3%;
+}
+
+.grid-galeriaseleccion-9 {
+  grid-area: img10;
+  border: 0;
+  border-radius: 3%;
+}
+
+.grid-galeriaseleccion-10 {
+  grid-area: img11;
+  border: 0;
+  border-radius: 3%;
+}
+
+.grid-galeriaseleccion-11 {
+  grid-area: img12;
+  border: 0;
+  border-radius: 3%;
+}
+
+.grid-galeriaselccion-12 {
+  grid-area: img9;
+  border: 0;
+  border-radius: 3%;
+}
+
+.grid-mejoresmomentos {
+  grid-area: texto1;
+  text-align: center;
+}
+
+.galeria-1 {
+  grid-area: titulo2;
+  text-align: center;
+}
+
+.grid-video-1 {
+  grid-area: video1;
+  height: 100%;
+  width: 100%;
+  border: 0;
+  border-radius: 3%;
+}
+
+.grid-video-2 {
+  grid-area: video2;
+  height: 100%;
+  width: 100%;
+  border: 0;
+  border-radius: 3%;
+}
+
+.grid-video-3 {
+  grid-area: video3;
+  height: 100%;
+  width: 100%;
+  border: 0;
+  border-radius: 3%;
+}
+
+.grid-video-4 {
+  grid-area: video4;
+  height: 100%;
+  width: 100%;
+  border: 0;
+  border-radius: 3%;
+}
+
+/*main de tienda*/
+.tienda {
+  display: flex;
+}
+
+.titulo-tienda {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+}
+
+.card-group-2 {
+  display: flex;
+}
+
+/*diseño tienda*/
+.merchandising-1 {
+  grid-area: titulo;
+  text-align: center;
+}
+
+.tienda {
+  display: grid;
+  grid-template-areas: "titulo";
+  grid-template-columns: 90%;
+  grid-template-rows: 60px;
+  justify-content: center;
+  text-align: center;
+}
+
+.titulo-tienda {
+  grid-area: titulo;
+  text-align: center;
+}
+
+/* main de contacto */
+.gracias {
+  text-align: center;
+}
+
+/*diseño contacto*/
+form {
+  display: grid;
+  width: 100%;
+  display: contents;
+}
+
+.info-contacto {
+  padding: 5px;
+  font-family: Arial, sans-serif;
+}
+
+.info-contacto h2 {
+  color: #333;
+}
+
+.info-contacto p {
+  color: #555;
+}
+
+.comunicate-grid {
+  display: grid;
+  grid-template-areas: "titulo titulo" "mapa info" "mapa info2" "mapa info3" "mapa info4" "mapa info5" "mapa info6" "mapa info7" "mapa info8" "mapa info9" "mapa info10" "titulo2 titulo2" "nombre nombre" "nombre2 nombre2" "mail mail" "mail2 mail2" "duda duda" "duda2 duda2" "enviar enviar" "invitacion invitacion" "gracias gracias";
+  grid-template-columns: 40% 40%;
+  grid-template-rows: 70px repeat(10, 40px) 150px repeat(2, 30px 40px) repeat(3, 50px) 90px 60px;
+  justify-content: center;
+}
+
+.contanto-1 {
+  grid-area: titulo;
+  text-align: center;
+  background-color: #6e6e6e;
+  margin: 10px;
+}
+
+.mapa-ezeiza {
+  grid-area: mapa;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  width: 100%;
+}
+
+.info1 {
+  grid-area: info;
+}
+
+.info2 {
+  grid-area: info2;
+}
+
+.info3 {
+  grid-area: info3;
+}
+
+.info4 {
+  grid-area: info4;
+}
+
+.info5 {
+  grid-area: info5;
+}
+
+.info6 {
+  grid-area: info6;
+}
+
+.info7 {
+  grid-area: info7;
+}
+
+.info8 {
+  grid-area: info8;
+}
+
+.info9 {
+  grid-area: info9;
+}
+
+.info10 {
+  grid-area: info10;
+}
+
+.titulo2 {
+  grid-area: titulo2;
+  text-align: center;
+  margin: 50px;
+}
+
+.nombre {
+  grid-area: nombre;
+}
+
+.nombre2 {
+  display: grid;
+  grid-area: nombre2;
+  width: 40%;
+  height: 80%;
+}
+
+.mail {
+  grid-area: mail;
+}
+
+.mail2 {
+  display: grid;
+  grid-area: mail2;
+  width: 40%;
+  height: 80%;
+}
+
+.duda {
+  grid-area: duda;
+}
+
+.duda2 {
+  grid-area: duda2;
+}
+
+.enviar {
+  grid-area: enviar;
+  font-size: 15px;
+  padding: 10px 10px;
+  margin: auto;
+}
+
+.invitacion {
+  grid-area: invitacion;
+  text-align: center;
+  margin: auto;
+}
+
+.gracias {
+  grid-area: gracias;
+  text-align: center;
+  font-style: italic;
+}
+
+/*mediaQ*/
+@media (max-width: 480px) {
+  header {
+    flex-direction: column;
+    text-align: center;
+  }
+  nav {
+    width: 100%;
+  }
+  header ul {
+    margin-left: 4px;
+    margin-right: 4px;
+    padding-left: 0rem;
+  }
+  /*index*/
+  .entrada {
+    height: 100%;
+    width: 100%;
+  }
+  .indexdiseño {
+    display: grid;
+    grid-template-areas: "titulo" "carrusel" "texto1" "img1" "img2" "img3";
+    grid-template-columns: 90%;
+    grid-template-rows: 50px 200px repeat(3, 250px) 300px;
+    justify-content: center;
+    align-items: center;
+  }
+  .tituloprincipal {
+    grid-area: titulo;
+    text-align: center;
+  }
+  .carrusel {
+    grid-area: carrusel;
+  }
+  .la-escaloneta {
+    grid-area: texto1;
+    text-align: center;
+    border: 0;
+    border-radius: 3%;
+  }
+  .entrada {
+    grid-area: img1;
+  }
+  .di-maria-finalissima {
+    grid-area: img2;
+  }
+  .messi2copaamerica {
+    grid-area: img3;
+  }
+  /*estadisticas*/
+  .contenedor-grid img {
+    height: 100%;
+    width: 100%;
+  }
+  .grid-titulo-1 {
+    grid-area: titulo;
+    text-align: center;
+    text-decoration: underline;
+    margin: 10px;
+  }
+  .grid-resumen-1 {
+    grid-area: resumen;
+    text-align: center;
+    margin: 10px;
+  }
+  .contenedor-grid {
+    display: grid;
+    grid-template-areas: "estadisticas1" "resumen2" "estadisticas2";
+    grid-template-columns: 90%;
+    grid-template-rows: 100px 450px 80px;
+    justify-content: center;
+    align-items: center;
+  }
+  .grid-estadisticas-1 {
+    grid-area: estadisticas1;
+    text-align: center;
+    text-decoration: underline;
+  }
+  .grid-resumen-2 {
+    grid-area: resumen2;
+    text-align: center;
+  }
+  .grid-estadisticas-2 {
+    grid-area: estadisticas2;
+    text-align: center;
+    text-decoration: underline;
+  }
+  /*galeria */
+  .galeria-grid img {
+    height: 100%;
+    width: 100%;
+  }
+  .galeria-grid video {
+    height: 100%;
+    width: 100%;
+  }
+  .galeria-grid {
+    display: grid;
+    grid-template-areas: "titulo" "img1" "img2" "img3" "img4" "img5" "img6" "img7" "img8" "img9" "img10" "img11" "titulo2" "texto1" "video1" "video2" "video3" "video4";
+    grid-template-columns: 90%;
+    grid-template-rows: 60px repeat(2, 250px) repeat(2, 400px 250px) 250px 250px 400px 250px 250px 40px 270px repeat(4, 200px);
+    justify-content: center;
+    align-items: center;
+    justify-items: stretch;
+  }
+  .grid-fotos {
+    grid-area: titulo;
+  }
+  .grid-galeriaseleccion-1 {
+    grid-area: img1;
+    border: 0;
+  }
+  .grid-galeriaseleccion-2 {
+    grid-area: img2;
+    border: 0;
+  }
+  .grid-galeriaseleccion-3 {
+    grid-area: img3;
+    border: 0;
+  }
+  .grid-galeriaseleccion-4 {
+    grid-area: img4;
+    border: 0;
+  }
+  .grid-galeriaseleccion-5 {
+    grid-area: img5;
+    border: 0;
+  }
+  .grid-galeriaseleccion-6 {
+    grid-area: img6;
+    border: 0;
+  }
+  .grid-galeriaseleccion-7 {
+    grid-area: img7;
+    border: 0;
+  }
+  .grid-galeriaseleccion-8 {
+    grid-area: img8;
+    border: 0;
+  }
+  .grid-galeriaseleccion-9 {
+    grid-area: img9;
+    border: 0;
+  }
+  .grid-galeriaseleccion-10 {
+    grid-area: img10;
+    border: 0;
+  }
+  .grid-galeriaseleccion-11 {
+    grid-area: img11;
+    border: 0;
+  }
+  .grid-galeriaseleccion-12 {
+    grid-area: img12;
+    border: 0;
+  }
+  .galeria-1 {
+    grid-area: titulo2;
+    text-align: center;
+    text-decoration: underline;
+  }
+  .grid-mejoresmomentos {
+    grid-area: texto1;
+    text-align: center;
+  }
+  .grid-video-1 {
+    grid-area: video1;
+    height: 100%;
+    width: 100%;
+    border: 0;
+  }
+  .grid-video-2 {
+    grid-area: video2;
+    height: 100%;
+    width: 100%;
+    border: 0;
+  }
+  .grid-video-3 {
+    grid-area: video3;
+    height: 100%;
+    width: 100%;
+    border: 0;
+  }
+  .grid-video-4 {
+    grid-area: video4;
+    height: 100%;
+    width: 100%;
+    border: 0;
+  }
+  /*comunicate*/
+  .comunicate-grid {
+    display: grid;
+    grid-template-areas: "titulo" "mapa" "info" "info2" "info3" "info4" "info5" "info6" "info7" "info8" "info9" "info10" "titulo2" "nombre" "nombre2" "mail" "mail2" "duda" "duda2" "enviar" "invitacion" "gracias";
+    grid-template-columns: 90%;
+    grid-template-rows: 60px 250px repeat(5, 40px 50px) 260px repeat(2, 30px 40px) 80px 80px 60px 100px 80px;
+    justify-content: center;
+  }
+  .contanto-1 {
+    grid-area: titulo;
+    text-align: center;
+    background-color: #6e6e6e;
+    margin: 10px;
+  }
+  .mapa-ezeiza {
+    grid-area: mapa;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+  }
+  .info1 {
+    grid-area: info;
+  }
+  .info2 {
+    grid-area: info2;
+  }
+  .info3 {
+    grid-area: info3;
+  }
+  .info4 {
+    grid-area: info4;
+  }
+  .info5 {
+    grid-area: info5;
+  }
+  .info6 {
+    grid-area: info6;
+  }
+  .info7 {
+    grid-area: info7;
+  }
+  .info8 {
+    grid-area: info8;
+  }
+  .info9 {
+    grid-area: info9;
+  }
+  .info10 {
+    grid-area: info10;
+  }
+  .titulo2 {
+    grid-area: titulo2;
+  }
+  .nombre {
+    grid-area: nombre;
+  }
+  .nombre2 {
+    grid-area: nombre2;
+  }
+  .mail {
+    grid-area: mail;
+  }
+  .mail2 {
+    grid-area: mail2;
+  }
+  .duda {
+    grid-area: duda;
+  }
+  .duda2 {
+    grid-area: duda2;
+  }
+  .enviar {
+    grid-area: enviar;
+    font-size: 20px;
+    padding: 4px 4px;
+  }
+  .invitacion {
+    grid-area: invitacion;
+  }
+  .gracias {
+    grid-area: gracias;
+  }
+  /*tienda*/
+  .tienda {
+    display: grid;
+    grid-template-areas: "titulo" "remeras";
+    grid-template-columns: 90%;
+    grid-template-rows: 60px 1fr;
+    justify-content: center;
+    text-align: center;
+  }
+  .titulo-tienda {
+    grid-area: titulo;
+    text-align: center;
+    text-decoration: underline;
+  }
+  .card-group {
+    grid-area: remeras;
+    margin: 30px;
+  }
+  /*footer*/
+  .iconos-redes img {
+    width: 30px;
+  }
+}
+
+/*# sourceMappingURL=estilos.css.map */

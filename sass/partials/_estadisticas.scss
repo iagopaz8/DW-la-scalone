@@ -1,0 +1,107 @@
+/*main de estadisticas*/
+.contenedor-grid {
+
+    .estadisticas {
+        text-align: center;
+        text-decoration: underline;
+    }
+
+    .resumen {
+        text-align: center;
+    }
+
+    .titulos {
+        text-align: center;
+        list-style: none;
+    }
+
+    .estadisticasIndividuales {
+        border-width: 100%;
+
+        img {
+            width: 100%;
+        }
+    }
+
+
+}
+.entrenadores:hover{
+     box-shadow: 0 0 15px rgb(0, 0, 0, 0.5);
+}
+.tabla:hover{
+     box-shadow: 0 0 15px rgb(0, 0, 0, 0.5);
+}
+
+/*diseño estadisticas */
+
+.contenedor-grid img {
+    height: 100%;
+    width: 100%;
+
+}
+
+
+.contenedor-grid {
+    display: grid;
+    grid-template-areas:
+        "titulo titulo"
+        "resumen resumen"
+        "estadisticas2 estadisticas2"
+    ;
+
+
+    grid-template-columns: 45% 45%;
+    grid-template-rows: 80px 100px 60px  ;
+    column-gap: 50px;
+    justify-content: center;
+    align-items: center;
+
+
+}
+
+.grid-titulo-1 {
+    display: grid;
+   
+    text-align: center;
+    padding: 10px;
+    align-items: center;
+
+}
+
+.grid-resumen-1 {
+    display: grid;
+    padding: 15px;
+    text-align: center;
+    
+}
+
+.grid-estadisticas-1 {
+    grid-area: titulo;
+    text-align: center;
+    
+    margin: 15px;
+}
+
+.grid-resumen-2 {
+    grid-area: resumen;
+    text-align: center;
+}
+
+.grid-partidos-1 {
+    grid-area: partidos1;
+    text-align: center;
+    list-style: none;
+
+}
+
+.grid-estadisticas-2 {
+    grid-area: estadisticas2;
+    text-align: center;
+   
+   
+}
+
+
+.tabla{
+    text-align: center;
+}

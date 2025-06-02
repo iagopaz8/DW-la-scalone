@@ -1,0 +1,173 @@
+/* main de contacto */
+
+.gracias {
+    text-align: center;
+}
+
+/*diseño contacto*/
+form{
+    display: grid;
+    width: 100%;
+    display:contents;
+}
+.info-contacto {
+      padding: 5px;
+      font-family: Arial, sans-serif;
+    }
+
+    .info-contacto h2 {
+      color: #333;
+    }
+
+    .info-contacto p {
+      color: #555;
+    }
+.comunicate-grid {
+    display: grid;
+    grid-template-areas:
+        "titulo titulo"
+        "mapa info"
+        "mapa info2"
+        "mapa info3"
+        "mapa info4"
+        "mapa info5"
+        "mapa info6"
+        "mapa info7"
+        "mapa info8"
+        "mapa info9"
+        "mapa info10"
+        "titulo2 titulo2"
+        "nombre nombre"
+        "nombre2 nombre2"
+        "mail mail"
+        "mail2 mail2"
+        "duda duda"
+        "duda2 duda2"
+        "enviar enviar"
+        "invitacion invitacion"
+        "gracias gracias"
+    ;
+    grid-template-columns: 40% 40%;
+    grid-template-rows: 70px repeat(10, 40px) 150px  repeat(2,30px 40px) repeat(3, 50px)  90px 60px ;
+    justify-content: center;
+
+}
+
+.contanto-1 {
+    grid-area: titulo;
+    text-align: center;
+    background-color: #6e6e6e;
+    margin: 10px;
+   
+}
+
+.mapa-ezeiza {
+    grid-area: mapa;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+}
+
+.info1 {
+    grid-area: info;
+}
+
+.info2 {
+    grid-area: info2;
+    
+}
+
+.info3 {
+    grid-area: info3;
+}
+
+.info4 {
+    grid-area: info4;
+}
+
+.info5 {
+    grid-area: info5;
+}
+
+.info6 {
+    grid-area: info6;
+}
+
+.info7 {
+    grid-area: info7;
+}
+
+.info8 {
+    grid-area: info8;
+}
+
+.info9 {
+    grid-area: info9;
+}
+
+.info10 {
+    grid-area: info10;
+}
+
+.titulo2 {
+    
+    grid-area: titulo2;
+    text-align: center;
+    margin: 50px;
+}
+
+.nombre {
+    grid-area: nombre;
+}
+
+.nombre2 {
+    display: grid;
+    grid-area: nombre2;
+   width: 40%;
+   height: 80%;
+
+}
+
+.mail {
+    grid-area: mail;
+}
+
+.mail2 {
+    display: grid;
+    grid-area: mail2;
+    width: 40%;
+    height: 80%;
+}
+
+.duda {
+    grid-area: duda;
+}
+
+.duda2 {
+    grid-area: duda2;
+}
+
+.enviar {
+    grid-area: enviar;
+    font-size: 15px;
+    padding: 10px 10px;
+    margin: auto;
+  
+    
+
+}
+
+.invitacion {
+    grid-area: invitacion;
+    text-align: center;
+    margin: auto;
+}
+
+.gracias {
+    grid-area: gracias;
+    text-align: center;
+    font-style: italic;
+}
+
+

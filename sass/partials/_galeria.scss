@@ -1,0 +1,184 @@
+@use "./variables" as*;
+/*main de galeria*/
+
+.galeria-grid {
+
+
+    .imagenes {
+        width: 100%;
+        height: 100%;
+        text-align: center;
+    }
+
+    .galeria {
+        text-decoration: underline;
+        text-align: center;
+    }
+
+    .videos {
+        text-align: center;
+    }
+
+    .grid-mejoresmomentos {
+        display: grid;
+        align-items: center;
+    }
+}
+
+/* diseño galeria*/
+
+.galeria-grid img {
+    height: 100%;
+    width: 100%;
+    box-shadow: 0 6px 15px rgb(0, 0, 0, 0.5);
+}
+.galeria-grid img:hover{
+    transform: scale(1.2);
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    
+}
+
+.galeria-grid video {
+    height: 100%;
+    width: 100%; 
+}
+
+
+.galeria-grid {
+    display: grid;
+    grid-template-areas:
+        "titulo titulo titulo"
+        "img1 img2 img3"
+        "img4 img5 img3"
+        "img4 img6 img7"
+        "img8 img9 img10"
+        "img11 img12 img10"
+        "titulo2 titulo2 titulo2"
+        "video1 texto1 video2 "
+        "video3 texto1 video4 "
+    ;
+
+    grid-template-columns: 30% 30% 30%;
+    grid-template-rows: 60px 300px 300px 300px 300px 300px 40px 300px 300px;
+    gap: 7px;
+    justify-content: center;
+    align-items: stretch;
+    justify-items: stretch;
+
+}
+
+.grid-fotos {
+    grid-area: titulo;
+    text-align: center;
+   
+}
+
+.grid-galeriaseleccion-1 {
+    grid-area: img1;
+    border:cap;
+    border-radius: 3%;  
+    
+}
+
+.grid-galeriaseleccion-2 {
+    grid-area: img2;
+    border: 0;
+    border-radius: 3%;
+}
+
+.grid-galeriaseleccion-3 {
+    grid-area: img3;
+    border:0;
+    border-radius: 3%;
+}
+
+.grid-galeriaseleccion-4 {
+    grid-area: img5;
+    border:0;
+    border-radius: 3%;
+}
+
+.grid-galeriaseleccion-5 {
+    grid-area: img4;
+    border:0cap;
+    border-radius: 3%;
+}
+
+.grid-galeriaseleccion-6 {
+    grid-area: img6;
+    border:0;
+    border-radius: 3%;
+}
+
+.grid-galeriaseleccion-7 {
+    grid-area: img7;
+    border: 0;
+    border-radius: 3%;
+}
+
+.grid-galeriaseleccion-8 {
+    grid-area: img8;
+    border:0;
+    border-radius: 3%;
+}
+
+.grid-galeriaseleccion-9 {
+    grid-area: img10;
+    border:0 ;
+    border-radius: 3%;
+}
+
+.grid-galeriaseleccion-10 {
+    grid-area: img11;
+    border:0 ;
+    border-radius: 3%;
+}
+
+.grid-galeriaseleccion-11 {
+    grid-area: img12;
+    border: 0;
+    border-radius: 3%;
+}
+
+.grid-galeriaselccion-12 {
+    grid-area: img9;
+    border:0 ;
+    border-radius: 3%;
+}
+
+.grid-mejoresmomentos {
+
+    grid-area: texto1;
+    text-align: center;
+}
+
+.galeria-1 {
+    grid-area: titulo2;
+    text-align: center;
+   
+}
+
+.grid-video-1 {
+    grid-area: video1;
+    @include video;
+}
+
+.grid-video-2 {
+    grid-area: video2;
+    @include video ;
+}
+
+.grid-video-3 {
+    grid-area: video3;
+    @include video;
+}
+
+.grid-video-4 {
+    grid-area: video4;
+    @include video;
+
+}
+
+
+
+

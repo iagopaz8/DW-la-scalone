@@ -1,107 +1,269 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!--css bs-->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4Q6Gf2aSP4eDXB8Miphtr37CMZZQ5oXLH2yaXMJ2w8e2ZtHTl7GptT4jmndRuHDT" crossorigin="anonymous">
-    <!--css-->
-    <link rel="stylesheet" href="../css/style.css">
-    <title>estadisticas</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!--css bs-->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-4Q6Gf2aSP4eDXB8Miphtr37CMZZQ5oXLH2yaXMJ2w8e2ZtHTl7GptT4jmndRuHDT" crossorigin="anonymous">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet" ;>
+
+  <!--scss-->
+  <link rel="stylesheet" href="../css/estilos.css">
+  <!--css-->
+  <link rel="stylesheet" href="../css/style.css">
+  <title>estadisticas</title>
 </head>
+
 <body>
-    <header>
-        <!--logo-->
-        <a href="../index.html"><img src="../image/micro-la-escaloneta.png" alt="micro de la escaloneta" ></a>
-        <!--menu de navegacion-->
-        <nav>
-            <ul>
-                <li><a href="../index.html">home</a></li>
-                <li><a href="#">estadisticas</a></li>
-                <li><a href="galeria.html">galeria</a></li>
-                <li><a href="tienda.html">tienda</a></li>
-                <li><a href="comunicate.html">comunicate</a></li>
-            </ul>
-        </nav>
-        
-
-    </header>
-      <main>
-        <section class="contenedor-grid">
-            <h1 class="grid-titulo-1">Estadisticas</h1>
-               <p class="grid-resumen-1">
-                ​Antes de la llegada de Lionel Scaloni en 2018, la selección argentina experimentó una etapa de inestabilidad tanto en el rendimiento como en la dirección técnica. A continuación, se detallan las estadísticas y el desempeño del equipo en los años previos. Durante (2011-2018), Argentina fue dirigida por varios entrenadores:
-               </p>
-    
-               <p class="grid-texto-1">Alejandro Sabella (2011–2014): 41 partidos, 26 victorias, 10 empates, 5 derrotas. Efectividad: 71,54%.
-               </p>
-
-               <p class="grid-texto-2">Gerardo Martino (2014–2016): 29 partidos, 19 victorias, 7 empates, 3 derrotas. Efectividad: 73,56%.
-               </p>
-
-               <p class="grid-texto-3">Edgardo Bauza (2016–2017): 8 partidos, 3 victorias, 2 empates, 3 derrotas. Efectividad: 45%.
-               </p>
-
-               <p class="grid-texto-4">Jorge Sampaoli (2017–2018): 15 partidos, 7 victorias, 4 empates, 4 derrotas. Efectividad: 55,55%</p>
-
-                <img class="grid-img-1" src="../image/sabella.jpg" alt="sabella">
-                <img class="grid-img-2" src="../image/gerardo-martino.jpg" alt="gerardo martino">
-                <img class="grid-img-3" src="../image/edgardo-bauza.jpg" alt="edgardo bauza">
-                <img class="grid-img-4" src="../image/sampaoli-pelado-hdp.jpg" alt="sampaoli">
-               
-                <h1 class="grid-estadisticas-1">
-                Los registros de Lionel Scaloni en la Selección Argentin
-                </h1>
-            <p class="grid-resumen-2">Desde su debut en septiembre de 2018, en un amistoso ante Guatemala en Los Ángeles, el oriundo de Pujato comandó en  85 partidos a Argentina. Encadenó el mayor invicto en la historia del seleccionado, con 36 encuentros en fila sin caídas, racha que se  estancó a un partido del récord histórico del fútbol mundial (37, de Italia).
-               Pero gran parte de su legado, escrito con Lionel Messi como gran figura, se debe a los títulos que consiguió: las Copas América de 2021 y 2024, la Finalissima de 2022 y la Copa del Mundo de 2022, un título que a Argentina se le negaba desde 1986.
-            </p>
-            
-
-            <ul class="grid-partidos-1">
-               <li>85 partidos</li>
-               <li>60 triunfos</li>
-               <li>17 empates</li>
-               <li>8 derrotas</li>
-               <li>165 goles a favor</li>
-               <li>46 goles en contra</li>
-               <li>4 títulos </li>
-               <li>(Mundial 2022, Copas América 2021 y 2014, Finalissima 2022)</li>
-            </ul>
-
-            <h1 class="grid-estadisticas-2">
-                Estadisticas Entre Sub20 y Mayor
-            </h1>
-             
-                <div class="grid-individuales-1">
-                  <img class="estadisticasEntrenador-1" src="../image/estadisticas.png" alt="estadisticas totales con la Selección">
-                </div>
-                <div class="grid-individuales-2"> 
-                    <img class="grid-estadisticasEntrenador-2"  src="../image/estadsitics-por-competencia.png"      alt="estaditicas-por-competencias">
-                </div>
-        </section>
-   
-            
-        
-
-     </main>
+  <header>
+    <nav class="navbar navbar-expand-lg py-0 fixed-top navegador">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="../index.html"><img src="../image/micro-la-escaloneta.png"
+            alt="micro de la Escaloneta" width="90px"></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+          aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link" href="../index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">estadisticas</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./galeria.html">galeria</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./tienda.html">tienda</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./contacto.html">contacto</a>
+            </li>
 
 
-    <footer><h1>¡seguinos!</h1>   
-        <!--logos de intagram y facebook -->
-        <div class="iconos-redes">
-           <div><a href="https://www.instagram.com/afaseleccion/">
-               <img src="../image/instagram-logo.png" alt="logo instagram" width="40"></a></div>
-           <div>   <a href="https://www.facebook.com/AFASeleccionArgentina/?locale=es_LA">
-               <img src="../image/facebook-logo.png" alt="logo facebook" width="40"></a></div>
-           <div><a href="https://www.youtube.com/@AFAOFICIAL">
-               <img src="../image/youtube-logo.png" alt="logo youtube" width="40"></a></div>  
+
+          </ul>
         </div>
-     <section>
-       <h6>©pagia sin fines de lucro ni comerciales</h6>
-     </section>
+      </div>
+    </nav>
+
+
+  </header>
+  <main>
+
+  <div class="container">
+    <h1 class="grid-titulo-1">Estadisticas</h1>
+    <p class="grid-resumen-1">
+      ​Antes de la llegada de Lionel Scaloni en 2018, la selección argentina experimentó una etapa de inestabilidad
+      tanto en el rendimiento como en la dirección técnica. A continuación, se detallan las estadísticas y el desempeño
+      del equipo en los años previos. Durante (2011-2018), Argentina fue dirigida por varios entrenadores:
+    </p>
+
+    <div class="row row-cols-1 row-cols-md-2 g-4 entrenadores">
+
+      <div class="col">
+        <div class="card">
+          <img src="../image/sabella.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Alejandro Sabella</h5>
+            <p class="card-text">(2011–2014): 41 partidos, 26 victorias, 10 empates, 5 derrotas. Efectividad: 71,54%.
+            </p>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="col">
+        <div class="card">
+          <img src="../image/gerardo-martino.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Gerardo Martino</h5>
+            <p class="card-text">(2014–2016): 29 partidos, 19 victorias, 7 empates, 3 derrotas. Efectividad: 73,56%.</p>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="col">
+        <div class="card">
+          <img src="../image/edgardo-bauza.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Edgardo Bauza</h5>
+            <p class="card-text">(2016–2017): 8 partidos, 3 victorias, 2 empates, 3 derrotas. Efectividad: 45%.</p>
+          </div>
+        </div>
+      </div>
+
+
+
+      <div class="col">
+        <div class="card">
+          <img src="../image/sampaoli-pelado-hdp.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Jorge Sampaoli</h5>
+            <p class="card-text">(2017–2018): 15 partidos, 7 victorias, 4 empates, 4 derrotas. Efectividad: 55,55%.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+
+    <section class="contenedor-grid">
+
+      <h2 class="grid-estadisticas-1">
+        Los registros de Lionel Scaloni en la Selección Argentin
+      </h2>
+      <p class="grid-resumen-2">Desde su debut en septiembre de 2018, en un amistoso ante Guatemala en Los Ángeles, el
+        oriundo de Pujato comandó en 85 partidos a Argentina. Encadenó el mayor invicto en la historia del seleccionado,
+        con 36 encuentros en fila sin caídas, racha que se estancó a un partido del récord histórico del fútbol mundial
+        (37, de Italia).
+        Pero gran parte de su legado, escrito con Lionel Messi como gran figura, se debe a los títulos que consiguió:
+        las Copas América de 2021 y 2024, la Finalissima de 2022 y la Copa del Mundo de 2022, un título que a Argentina
+        se le negaba desde 1986.
+      </p>
+
+
+      
+
+      <h2 class="grid-estadisticas-2">
+        Estadisticas Entre Sub20 y Mayor
+      </h2>
+
+
+    </section class>
+    <div class="table-responsive tabla">
+      <table class="table table-bordered">
+        <tr class="table-secondary">
+          <th>torneo</th>
+          <th>PD</th>
+          <th>G</th>
+          <th>E</th>
+          <th>P</th>
+          <th>GF</th>
+          <th>GC</th>
+          <th>Dif.</th>
+          <th>Rendimiento</th>
+          <th>mejor resultado</th>
+        </tr>
+        <tr>
+          <td>Torneo Sub-20 de la alcudia</td>
+          <td>6</td>
+          <td>4</td>
+          <td>1</td>
+          <td>1</td>
+          <td>11</td>
+          <td>3</td>
+          <td>+8</td>
+          <td>72.23%</td>
+          <td style="background-color: yellow;">campeon</td>
+        </tr>
+        <tr>
+          <td>Finalissima</td>
+          <td>1</td>
+          <td>1</td>
+          <td>0</td>
+          <td>0</td>
+          <td>3</td>
+          <td>0</td>
+          <td>+3</td>
+          <td>100%</td>
+          <td style="background-color: yellow;">Campeon</td>
+        </tr>
+        <tr>
+          <td>Copa America</td>
+          <td>19</td>
+          <td>13</td>
+          <td>4</td>
+          <td>2</td>
+          <td>28</td>
+          <td>10</td>
+          <td>+18</td>
+          <td>75.44%</td>
+          <td style="background-color: yellow;">Campeon</td>
+        </tr>
+        <tr>
+          <td>Eliminatorias Sudamericanas</td>
+          <td>31</td>
+          <td>21</td>
+          <td>7</td>
+          <td>3</td>
+          <td>53</td>
+          <td>16</td>
+          <td>+37</td>
+          <td>75.27%</td>
+          <td style="background-color: grey;">Segundo lugar</td>
+        </tr>
+        <tr>
+          <td>Mundial</td>
+          <td>7</td>
+          <td>4</td>
+          <td>2</td>
+          <td>1</td>
+          <td>15</td>
+          <td>8</td>
+          <td>+7</td>
+          <td>66.66%</td>
+          <td style="background-color: yellow;">Campeon</td>
+          
+        </tr>
+        <tr>
+          <td>Amistosos</td>
+          <td>27</td>
+          <td>21</td>
+          <td>4</td>
+          <td>2</td>
+          <td>73</td>
+          <td>12</td>
+          <td>+61</td>
+          <td>82.72%</td>
+          <td style="background-color: green;">+21 PG</td>
+        </tr>
+        <tr class="table-secondary";>
+          <td>Total</td>
+          <td>91</td>
+          <td>64</td>
+          <td>18</td>
+          <td>9</td>
+          <td>183</td>
+          <td>49</td>
+          <td>+134</td>
+          <td>76.92%</td>
+          <td>Cinco titulos</td>
+        </tr>
+      </table>
+    </div>
+
+
+    </main>
+
+
+    <footer>
+      <h2 class="seguinos">¡seguinos!</h2>
+      <!--logos de intagram y facebook -->
+      <div class="iconos-redes">
+        <div><a href="https://www.instagram.com/afaseleccion/">
+            <img src="../image/instagram-logo.png" alt="logo instagram" width="40"></a></div>
+        <div> <a href="https://www.facebook.com/AFASeleccionArgentina/?locale=es_LA">
+            <img src="../image/facebook-logo.png" alt="logo facebook" width="40"></a></div>
+        <div><a href="https://www.youtube.com/@AFAOFICIAL">
+            <img src="../image/youtube-logo.png" alt="logo youtube" width="40"></a></div>
+      </div>
+      <section>
+        <h6>©pagia sin fines de lucro ni comerciales</h6>
+      </section>
 
 
     </footer>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js" integrity="sha384-j1CDi7MgGQ12Z7Qab0qlWQ/Qqz24Gc6BM0thvEMVjHnfYGF0rmFCozFSxQBxwHKO" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-j1CDi7MgGQ12Z7Qab0qlWQ/Qqz24Gc6BM0thvEMVjHnfYGF0rmFCozFSxQBxwHKO"
+      crossorigin="anonymous"></script>
 </body>
+
 </html>
