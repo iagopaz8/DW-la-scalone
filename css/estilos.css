@@ -174,7 +174,8 @@ main .la-escaloneta {
   grid-template-areas: "titulo titulo" "resumen resumen" "estadisticas2 estadisticas2";
   grid-template-columns: 45% 45%;
   grid-template-rows: 80px 100px 60px;
-  column-gap: 50px;
+  -moz-column-gap: 50px;
+       column-gap: 50px;
   justify-content: center;
   align-items: center;
 }
@@ -751,7 +752,7 @@ form {
     width: 100%;
     border: 0;
   }
-  /*comunicate*/
+  /*contacto*/
   .comunicate-grid {
     display: grid;
     grid-template-areas: "titulo" "mapa" "info" "info2" "info3" "info4" "info5" "info6" "info7" "info8" "info9" "info10" "titulo2" "nombre" "nombre2" "mail" "mail2" "duda" "duda2" "enviar" "invitacion" "gracias";
@@ -804,6 +805,7 @@ form {
   }
   .titulo2 {
     grid-area: titulo2;
+    margin: 30px;
   }
   .nombre {
     grid-area: nombre;
@@ -856,6 +858,4 @@ form {
   .iconos-redes img {
     width: 30px;
   }
-}
-
-/*# sourceMappingURL=estilos.css.map */
+}/*# sourceMappingURL=estilos.css.map */
