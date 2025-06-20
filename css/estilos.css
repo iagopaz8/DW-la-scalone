@@ -52,7 +52,7 @@ footer h6 {
 
 /*todo dentro de main de index*/
 .indexdiseño img {
-  width: 100%;
+  height: 100%;
   width: 100%;
 }
 
@@ -74,8 +74,8 @@ main .la-escaloneta {
 
 /*diseño index*/
 .index img {
-  width: 100%;
   height: 100%;
+  width: 100%;
   box-shadow: 0 6px 15px rgba(0, 0, 0, 0.5);
 }
 
@@ -83,7 +83,7 @@ main .la-escaloneta {
   display: grid;
   grid-template-areas: "titulo titulo titulo" "carrusel carrusel carrusel" "texto1 texto1 texto1" "img1 img2 img3";
   grid-template-columns: 30% 30% 30%;
-  grid-template-rows: 60px 1fr 120px 350px;
+  grid-template-rows: 200px 1fr 180px 350px;
   justify-content: center;
   align-items: center;
   gap: 4px;
@@ -173,17 +173,17 @@ main .la-escaloneta {
   display: grid;
   grid-template-areas: "titulo titulo" "resumen resumen" "estadisticas2 estadisticas2";
   grid-template-columns: 45% 45%;
-  grid-template-rows: 80px 100px 60px;
+  grid-template-rows: 90px 150px 60px;
+  justify-content: center;
   -moz-column-gap: 50px;
        column-gap: 50px;
-  justify-content: center;
   align-items: center;
 }
 
 .grid-titulo-1 {
   display: grid;
   text-align: center;
-  padding: 10px;
+  grid-template-rows: 200px;
   align-items: center;
 }
 
@@ -256,23 +256,24 @@ main .la-escaloneta {
 
 .galeria-grid {
   display: grid;
-  grid-template-areas: "titulo titulo titulo" "img1 img2 img3" "img4 img5 img3" "img4 img6 img7" "img8 img9 img10" "img11 img12 img10" "titulo2 titulo2 titulo2" "video1 texto1 video2 " "video3 texto1 video4 ";
+  grid-template-areas: "titulo titulo titulo" "img1 img2 img3" "img4 img5 img3" "img4 img6 img7" "img8 img9 img10" "img11 img12 img10" "titulo2 titulo2 titulo2" "video1 texto1 video2" "video3 texto1 video4";
   grid-template-columns: 30% 30% 30%;
-  grid-template-rows: 60px 300px 300px 300px 300px 300px 40px 300px 300px;
-  gap: 7px;
+  grid-template-rows: 200px 300px 300px 300px 300px 300px 40px 300px 300px;
   justify-content: center;
-  align-items: stretch;
+  gap: 7px;
+  align-items: center;
   justify-items: stretch;
 }
 
 .grid-fotos {
   grid-area: titulo;
   text-align: center;
+  justify-items: center;
 }
 
 .grid-galeriaseleccion-1 {
   grid-area: img1;
-  border: cap;
+  border: 0;
   border-radius: 3%;
 }
 
@@ -296,7 +297,7 @@ main .la-escaloneta {
 
 .grid-galeriaseleccion-5 {
   grid-area: img4;
-  border: 0cap;
+  border: 0;
   border-radius: 3%;
 }
 
@@ -410,9 +411,8 @@ main .la-escaloneta {
   display: grid;
   grid-template-areas: "titulo";
   grid-template-columns: 90%;
-  grid-template-rows: 60px;
+  grid-template-rows: 200px;
   justify-content: center;
-  text-align: center;
 }
 
 .titulo-tienda {
@@ -563,6 +563,122 @@ form {
   font-style: italic;
 }
 
+@media (min-width: 481px) and (max-width: 800px) {
+  /*galeria*/
+  .galeria-grid img {
+    height: 100%;
+    width: 100%;
+  }
+  .galeria-grid video {
+    height: 100%;
+    width: 100%;
+  }
+  .galeria-grid {
+    display: grid;
+    grid-template-areas: "titulo titulo" "img1 img2" "img3 img4" "img5 img6" "img7 img8" "img9 img10" "img11 img12" "titulo2 titulo2" "parrafo parrafo" "video1 video2" "video3 video4";
+    grid-template-columns: 45% 45%;
+    grid-template-rows: 120px repeat(4, 200px) repeat(2, 350px) 100px 150px 200px 200px;
+    justify-content: center;
+    align-items: center;
+    justify-items: stretch;
+  }
+  .grid-fotos {
+    grid-area: titulo;
+  }
+  .grid-galeriaseleccion-1 {
+    grid-area: img1;
+    border: 0;
+  }
+  .grid-galeriaseleccion-2 {
+    grid-area: img2;
+    border: 0;
+  }
+  .grid-galeriaseleccion-3 {
+    grid-area: img10;
+    border: 0;
+  }
+  .grid-galeriaseleccion-4 {
+    grid-area: img4;
+    border: 0;
+  }
+  .grid-galeriaseleccion-5 {
+    grid-area: img11;
+    border: 0;
+  }
+  .grid-galeriaseleccion-6 {
+    grid-area: img6;
+    border: 0;
+  }
+  .grid-galeriaseleccion-7 {
+    grid-area: img7;
+    border: 0;
+  }
+  .grid-galeriaseleccion-8 {
+    grid-area: img8;
+    border: 0;
+  }
+  .grid-galeriaseleccion-9 {
+    grid-area: img12;
+    border: 0;
+  }
+  .grid-galeriaseleccion-10 {
+    grid-area: img3;
+    border: 0;
+  }
+  .grid-galeriaseleccion-11 {
+    grid-area: img5;
+    border: 0;
+  }
+  .grid-galeriaseleccion- {
+    grid-area: img9;
+    border: 0;
+  }
+  .galeria-1 {
+    grid-area: titulo2;
+    text-align: center;
+    text-decoration: underline;
+  }
+  .grid-mejoresmomentos {
+    grid-area: parrafo;
+    text-align: center;
+  }
+  .grid-video-1 {
+    grid-area: video1;
+    height: 100%;
+    width: 100%;
+    border: 0;
+  }
+  .grid-video-2 {
+    grid-area: video2;
+    height: 100%;
+    width: 100%;
+    border: 0;
+  }
+  .grid-video-3 {
+    grid-area: video3;
+    height: 100%;
+    width: 100%;
+    border: 0;
+  }
+  .grid-video-4 {
+    grid-area: video4;
+    height: 100%;
+    width: 100%;
+    border: 0;
+  }
+  /*index*/
+  .indexdiseño {
+    grid-template-rows: 200px 1fr 180px 200px;
+  }
+  /*estadisticas*/
+  .contenedor-grid {
+    grid-template-rows: 120px 180px 60px;
+  }
+  /*contacto*/
+  .comunicate-grid {
+    grid-template-rows: 70px repeat(10, 40px) 220px repeat(2, 30px 40px) repeat(3, 50px) 90px 60px;
+  }
+}
 /*mediaQ*/
 @media (max-width: 480px) {
   header {
@@ -651,11 +767,7 @@ form {
     text-decoration: underline;
   }
   /*galeria */
-  .galeria-grid img {
-    height: 100%;
-    width: 100%;
-  }
-  .galeria-grid video {
+  .galeria-grid img, video {
     height: 100%;
     width: 100%;
   }
@@ -747,9 +859,9 @@ form {
     border: 0;
   }
   .grid-video-4 {
-    grid-area: video4;
     height: 100%;
     width: 100%;
+    grid-area: video4;
     border: 0;
   }
   /*contacto*/

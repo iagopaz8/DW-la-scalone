@@ -1,0 +1,25 @@
+
+
+@mixin video{
+    height: 100%;
+    width: 100%;
+    border:0 ;
+    border-radius: 3%;
+}
+@mixin imagen{
+    border:0;
+    border-radius: 3%;
+}
+@mixin fotos{
+    height: 100%;
+    width: 100%;
+}
+
+@mixin resumido ($areas, $columnas, $filas){
+
+    display: grid ;
+    grid-template-areas: $areas;
+    grid-template-columns: $columnas;
+    grid-template-rows: $filas;
+    justify-content: center;
+ }

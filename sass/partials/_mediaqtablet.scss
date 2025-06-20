@@ -1,0 +1,163 @@
+@use "./mixin" as *;
+
+@media(min-width:481px) and (max-width:800px){
+/*galeria*/
+ 
+    .galeria-grid img {
+        height: 100%;
+        width: 100%;
+    }
+
+    .galeria-grid video {
+       @include fotos;
+    }
+
+    .galeria-grid {
+        @include resumido("titulo titulo"
+        "img1 img2"
+        "img3 img4"
+        "img5 img6"
+        "img7 img8"
+        "img9 img10"
+        "img11 img12"
+        "titulo2 titulo2"
+        "parrafo parrafo"
+        "video1 video2"
+        "video3 video4",45% 45%,120px repeat(4, 200px) repeat(2,350px) 100px 150px 200px 200px);    
+        align-items: center;
+        justify-items: stretch;
+    }
+
+     .grid-fotos {
+        grid-area: titulo;
+    }
+
+    .grid-galeriaseleccion-1 {
+        grid-area: img1;
+        border: 0;
+    }
+
+    .grid-galeriaseleccion-2 {
+        grid-area: img2;
+        border: 0;
+    }
+
+    .grid-galeriaseleccion-3 {
+        grid-area: img10;
+        border: 0;
+    }
+
+    .grid-galeriaseleccion-4 {
+        grid-area: img4;
+        border: 0;
+    }
+
+    .grid-galeriaseleccion-5 {
+        grid-area: img11;
+        border: 0;
+    }
+
+    .grid-galeriaseleccion-6 {
+        grid-area: img6;
+        border: 0;
+    }
+
+    .grid-galeriaseleccion-7 {
+        grid-area: img7;
+        border: 0;
+    }
+
+    .grid-galeriaseleccion-8 {
+        grid-area: img8;
+        border: 0;
+    }
+
+    .grid-galeriaseleccion-9 {
+        grid-area: img12;
+        border: 0;
+    }
+
+    .grid-galeriaseleccion-10 {
+        grid-area: img3;
+        border: 0;
+    }
+
+    .grid-galeriaseleccion-11 {
+        grid-area: img5;
+        border: 0;
+    }
+
+    .grid-galeriaseleccion- {
+        grid-area: img9;
+        border: 0;
+    }
+
+    .galeria-1 {
+        grid-area: titulo2;
+        text-align: center;
+        text-decoration: underline;
+    }
+
+    .grid-mejoresmomentos {
+
+        grid-area: parrafo;
+        text-align: center;
+    }
+
+    .grid-video-1 {
+        grid-area: video1;
+       @include fotos;
+        border:0;
+    }
+
+    .grid-video-2 {
+        grid-area: video2;
+        @include fotos;
+        border: 0;
+    }
+
+    .grid-video-3 {
+        grid-area: video3;
+       @include fotos;
+        border: 0;
+    }
+
+    .grid-video-4 {
+        grid-area: video4;
+        @include fotos;
+        border: 0;
+    }
+
+
+
+
+/*index*/
+.indexdiseño {
+    grid-template-rows: 200px 1fr 180px 200px;
+}
+
+
+
+/*estadisticas*/
+.contenedor-grid{
+    grid-template-rows: 120px 180px 60px  ;
+}
+
+/*contacto*/
+.comunicate-grid{
+    grid-template-rows: 70px repeat(10, 40px) 220px  repeat(2,30px 40px) repeat(3, 50px)  90px 60px ;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+}

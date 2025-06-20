@@ -4,6 +4,8 @@
 @use "partials/tienda";
 @use "partials/contacto";
 @use "partials/variables";
+@use "partials/mixin";
 
 //ultimo partials
+@use"partials/mediaqtablet";
 @use"partials/mediaq";

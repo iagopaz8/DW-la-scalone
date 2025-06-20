@@ -1,3 +1,5 @@
+@use "./mixin" as *;
+
 /* main de contacto */
 
 .gracias {
@@ -5,27 +7,27 @@
 }
 
 /*diseño contacto*/
-form{
+form {
     display: grid;
     width: 100%;
-    display:contents;
+    display: contents;
 }
+
 .info-contacto {
-      padding: 5px;
-      font-family: Arial, sans-serif;
-    }
+    padding: 5px;
+    font-family: Arial, sans-serif;
+}
 
-    .info-contacto h2 {
-      color: #333;
-    }
+.info-contacto h2 {
+    color: #333;
+}
 
-    .info-contacto p {
-      color: #555;
-    }
+.info-contacto p {
+    color: #555;
+}
+
 .comunicate-grid {
-    display: grid;
-    grid-template-areas:
-        "titulo titulo"
+    @include resumido("titulo titulo"
         "mapa info"
         "mapa info2"
         "mapa info3"
@@ -45,28 +47,23 @@ form{
         "duda2 duda2"
         "enviar enviar"
         "invitacion invitacion"
-        "gracias gracias"
-    ;
-    grid-template-columns: 40% 40%;
-    grid-template-rows: 70px repeat(10, 40px) 150px  repeat(2,30px 40px) repeat(3, 50px)  90px 60px ;
-    justify-content: center;
-
+        "gracias gracias", 40% 40%, 70px repeat(10, 40px) 150px repeat(2, 30px 40px) repeat(3, 50px) 90px 60px);
+   
 }
+
 
 .contanto-1 {
     grid-area: titulo;
     text-align: center;
     background-color: #6e6e6e;
     margin: 10px;
-   
 }
 
 .mapa-ezeiza {
     grid-area: mapa;
     align-items: center;
     justify-content: center;
-    height: 100%;
-    width: 100%;
+    @include fotos ;
 }
 
 .info1 {
@@ -75,7 +72,6 @@ form{
 
 .info2 {
     grid-area: info2;
-    
 }
 
 .info3 {
@@ -110,7 +106,7 @@ form{
     grid-area: info10;
 }
 
-.titulo2 {  
+.titulo2 {
     grid-area: titulo2;
     text-align: center;
     margin: 50px;
@@ -123,11 +119,9 @@ form{
 .nombre2 {
     display: grid;
     grid-area: nombre2;
-   width: 40%;
-   height: 80%;
-
+    width: 40%;
+    height: 80%;
 }
-
 .mail {
     grid-area: mail;
 }
@@ -152,9 +146,6 @@ form{
     font-size: 15px;
     padding: 10px 10px;
     margin: auto;
-  
-    
-
 }
 
 .invitacion {
@@ -168,5 +159,3 @@ form{
     text-align: center;
     font-style: italic;
 }
-
-

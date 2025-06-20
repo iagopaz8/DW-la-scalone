@@ -1,4 +1,5 @@
-@use "./variables" as*;
+@use "./variables" as *;
+@use "./mixin" as *;
 /*main de galeria*/
 
 .galeria-grid {
@@ -28,8 +29,7 @@
 /* diseño galeria*/
 
 .galeria-grid img {
-    height: 100%;
-    width: 100%;
+    @include fotos ;
     box-shadow: 0 6px 15px rgb(0, 0, 0, 0.5);
 }
 .galeria-grid img:hover{
@@ -38,15 +38,16 @@
     
 }
 
+
+
 .galeria-grid video {
-    height: 100%;
-    width: 100%; 
+    @include fotos 
 }
 
 
+
 .galeria-grid {
-    display: grid;
-    grid-template-areas:
+    @include resumido(
         "titulo titulo titulo"
         "img1 img2 img3"
         "img4 img5 img3"
@@ -54,96 +55,87 @@
         "img8 img9 img10"
         "img11 img12 img10"
         "titulo2 titulo2 titulo2"
-        "video1 texto1 video2 "
-        "video3 texto1 video4 "
-    ;
-
-    grid-template-columns: 30% 30% 30%;
-    grid-template-rows: 60px 300px 300px 300px 300px 300px 40px 300px 300px;
+        "video1 texto1 video2"
+        "video3 texto1 video4",
+        30% 30% 30%,
+        200px 300px 300px 300px 300px 300px 40px 300px 300px
+    );
     gap: 7px;
-    justify-content: center;
-    align-items: stretch;
+    align-items: center;
     justify-items: stretch;
-
+    
 }
+
+
+
+
 
 .grid-fotos {
     grid-area: titulo;
     text-align: center;
+    justify-items: center;
    
 }
 
 .grid-galeriaseleccion-1 {
     grid-area: img1;
-    border:cap;
-    border-radius: 3%;  
+    @include imagen ;
     
 }
 
 .grid-galeriaseleccion-2 {
     grid-area: img2;
-    border: 0;
-    border-radius: 3%;
+    @include imagen ;
 }
 
 .grid-galeriaseleccion-3 {
     grid-area: img3;
-    border:0;
-    border-radius: 3%;
+    @include imagen ;
 }
 
 .grid-galeriaseleccion-4 {
     grid-area: img5;
-    border:0;
-    border-radius: 3%;
+    @include imagen ;
 }
 
 .grid-galeriaseleccion-5 {
     grid-area: img4;
-    border:0cap;
-    border-radius: 3%;
+    @include imagen ;
 }
 
 .grid-galeriaseleccion-6 {
     grid-area: img6;
-    border:0;
-    border-radius: 3%;
+    @include imagen ;
 }
 
 .grid-galeriaseleccion-7 {
     grid-area: img7;
-    border: 0;
-    border-radius: 3%;
+    @include imagen ;
 }
 
 .grid-galeriaseleccion-8 {
     grid-area: img8;
-    border:0;
-    border-radius: 3%;
+   @include imagen ;
 }
 
 .grid-galeriaseleccion-9 {
     grid-area: img10;
-    border:0 ;
-    border-radius: 3%;
+    @include imagen ;
 }
 
 .grid-galeriaseleccion-10 {
     grid-area: img11;
-    border:0 ;
-    border-radius: 3%;
+    @include imagen ;
 }
 
 .grid-galeriaseleccion-11 {
     grid-area: img12;
-    border: 0;
-    border-radius: 3%;
+    @include imagen ;
 }
 
 .grid-galeriaselccion-12 {
     grid-area: img9;
-    border:0 ;
-    border-radius: 3%;
+    @include imagen ;
 }
 
 .grid-mejoresmomentos {

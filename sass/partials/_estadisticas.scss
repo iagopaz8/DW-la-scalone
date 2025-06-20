@@ -1,3 +1,4 @@
+@use "./mixin" as *;
 /*main de estadisticas*/
 .contenedor-grid {
 
@@ -35,50 +36,35 @@
 /*diseño estadisticas */
 
 .contenedor-grid img {
-    height: 100%;
-    width: 100%;
-
+   @include fotos ;
 }
 
-
-.contenedor-grid {
-    display: grid;
-    grid-template-areas:
-        "titulo titulo"
+.contenedor-grid{
+    @include resumido(
+     "titulo titulo"
         "resumen resumen"
-        "estadisticas2 estadisticas2"
-    ;
-
-
-    grid-template-columns: 45% 45%;
-    grid-template-rows: 80px 100px 60px  ;
+        "estadisticas2 estadisticas2", 45% 45%,
+        90px 150px 60px);
     column-gap: 50px;
-    justify-content: center;
     align-items: center;
-
-
 }
 
 .grid-titulo-1 {
     display: grid;
-   
     text-align: center;
-    padding: 10px;
+    grid-template-rows: 200px;
     align-items: center;
-
 }
 
 .grid-resumen-1 {
     display: grid;
     padding: 15px;
-    text-align: center;
-    
+    text-align: center;   
 }
 
 .grid-estadisticas-1 {
     grid-area: titulo;
-    text-align: center;
-    
+    text-align: center;   
     margin: 15px;
 }
 
@@ -91,17 +77,12 @@
     grid-area: partidos1;
     text-align: center;
     list-style: none;
-
 }
 
 .grid-estadisticas-2 {
     grid-area: estadisticas2;
-    text-align: center;
-   
-   
+    text-align: center;  
 }
-
-
 .tabla{
     text-align: center;
 }

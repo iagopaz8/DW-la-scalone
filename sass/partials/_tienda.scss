@@ -1,3 +1,5 @@
+@use "./mixin" as *;
+
 /*main de tienda*/
 .tienda {
     display: flex;
@@ -19,19 +21,12 @@
     grid-area: titulo;
     text-align: center;
 }
-.tienda {
-    display: grid;
-    grid-template-areas:
-        "titulo"
-        
-    ;
-
-
-    grid-template-columns: 90%;
-    grid-template-rows: 60px ;
-    justify-content: center;
-    text-align: center;
+.tienda{
+    @include resumido(
+       "titulo",90%,200px
+    );
 }
+
 
 .titulo-tienda {
     grid-area: titulo;

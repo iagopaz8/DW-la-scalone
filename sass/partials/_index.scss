@@ -1,8 +1,6 @@
-
 @use "./variables" as*;
-
-
-*{
+@use "./mixin" as *;
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -15,7 +13,6 @@ body {
 
 /*header y footer*/
 .navegador {
-    
     background-color: $celeste;
     border-radius: 0 0 0 0.75rem 0.75rem;
     padding: 1rem;
@@ -34,10 +31,7 @@ footer {
     h2 {
         color: $negro;
         text-align: center;
-        
-
     }
-
 
     .iconos-redes {
         text-align: center;
@@ -64,10 +58,8 @@ footer {
 }
 
 /*todo dentro de main de index*/
-.indexdiseño img{
-    width: 100%;
-    width: 100%;
-    
+.indexdiseño img {
+    @include fotos ;
 }
 
 main {
@@ -76,7 +68,6 @@ main {
 
     .tituloprincipal {
         text-align: center;
-        
         font-family: initial;
     }
 
@@ -86,35 +77,25 @@ main {
 
     .la-escaloneta {
         text-align: center;
-        
         margin: 20px;
     }
 
 }
-
 /*diseño index*/
-.index img{
-    width: 100%;
-    height: 100%;
+.index img {
+    @include fotos ;
     box-shadow: 0 6px 15px rgb(0, 0, 0, 0.5);
 }
 
-
 .indexdiseño {
-    display: grid;
-    grid-template-areas:
-        "titulo titulo titulo"
+    @include resumido("titulo titulo titulo"
         "carrusel carrusel carrusel"
         "texto1 texto1 texto1"
-        "img1 img2 img3"
-    ;
-    grid-template-columns: 30% 30% 30%;
-    grid-template-rows: 60px 1fr 120px 350px;
-    justify-content: center;
+        "img1 img2 img3", 30% 30% 30%, 200px 1fr 180px 350px);
+    
     align-items: center;
     gap: 4px;
     border-radius: 3%;
-
 }
 
 .tituloprincipal {
@@ -122,16 +103,13 @@ main {
     text-align: center;
 }
 
-.carrusel{
+.carrusel {
     grid-area: carrusel;
-  
-   
 }
 
 .la-escaloneta {
     grid-area: texto1;
     text-align: center;
-   
 }
 
 .entrada {
@@ -140,29 +118,30 @@ main {
     width: 100%;
     height: 100%;
     border-radius: 3%;
-     box-shadow: 0 6px 15px rgb(0, 0, 0, 0.5);
-    
+    box-shadow: 0 6px 15px rgb(0, 0, 0, 0.5);
+}
 
-}
-.entrada:hover{
-     transform: scale(1.2);
-    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
-}
-.messi2copaamericas{
-    grid-area: img3;
-    @extend .entrada
-    
-}
-.messi2copaamericas:hover{
+.entrada:hover {
     transform: scale(1.2);
     transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
 
+.messi2copaamericas {
+    grid-area: img3;
+    @extend .entrada
 }
-.di-maria-finalissima{
+
+.messi2copaamericas:hover {
+    transform: scale(1.2);
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.di-maria-finalissima {
     grid-area: img1;
-   @extend .entrada
+    @extend .entrada
 }
-.di-maria-finalissima:hover{
+
+.di-maria-finalissima:hover {
     transform: scale(1.2);
     transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
 }
